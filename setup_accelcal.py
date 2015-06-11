@@ -51,9 +51,9 @@ def calibrate_accel_6dof(samples):
     initial_params = [0.0,0.0,0.0,1.0,1.0,1.0]
 
     bounds = (
-        (-GRAVITY_MSS,GRAVITY_MSS),
-        (-GRAVITY_MSS,GRAVITY_MSS),
-        (-GRAVITY_MSS,GRAVITY_MSS),
+        (-0.5*GRAVITY_MSS,0.5*GRAVITY_MSS),
+        (-0.5*GRAVITY_MSS,0.5*GRAVITY_MSS),
+        (-0.5*GRAVITY_MSS,0.5*GRAVITY_MSS),
         (0.9,1.1),
         (0.9,1.1),
         (0.9,1.1)
